@@ -1,0 +1,10 @@
+.success-modal {
+  align-items: center;
+}
+
+.success-modal__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--green);
+}/*# sourceMappingURL=style.css.map */

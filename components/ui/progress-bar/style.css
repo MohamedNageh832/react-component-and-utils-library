@@ -1,0 +1,15 @@
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.progress__bar {
+  display: block;
+  width: 10%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--light-green);
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=style.css.map */

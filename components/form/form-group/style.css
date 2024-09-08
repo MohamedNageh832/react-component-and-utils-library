@@ -1,0 +1,13 @@
+.form__group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.form__inline-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}/*# sourceMappingURL=style.css.map */

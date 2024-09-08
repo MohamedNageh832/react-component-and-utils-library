@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  gap: var(--s1);
+  align-items: center;
+}
+
+.logo__icon {
+  width: 45px;
+  height: 45px;
+}
+
+.logo--small {
+  gap: var(--s2);
+}
+
+.logo--small .logo__icon {
+  width: 35px;
+  height: 35px;
+}
+
+.logo__text {
+  font-size: var(--fs5);
+  font-weight: 600;
+  background: var(--bg-logo);
+  background-clip: text;
+  color: transparent;
+}
+
+.logo--small .logo__text {
+  font-size: var(--fs4);
+}

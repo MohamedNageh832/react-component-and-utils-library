@@ -1,0 +1,7 @@
+.form__label {
+  color: var(--secondary-color);
+  font-size: var(--fs2);
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

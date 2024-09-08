@@ -1,0 +1,10 @@
+.badge {
+  padding: var(--s1) var(--s2);
+  border-radius: 25px;
+  color: var(--secondary);
+}
+
+.badge--red {
+  background-color: var(--red);
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

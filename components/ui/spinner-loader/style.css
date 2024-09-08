@@ -1,0 +1,41 @@
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  z-index: 7;
+}
+
+.spinner__loader {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--light-green) transparent var(--light-green);
+  border-radius: 50%;
+  animation: spin 1s linear forwards infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner__text {
+  overflow: hidden;
+  color: var(--green);
+  font-size: var(--fs4);
+  font-weight: 600;
+  -webkit-background-clip: text;
+          background-clip: text;
+  white-space: nowrap;
+}/*# sourceMappingURL=style.css.map */

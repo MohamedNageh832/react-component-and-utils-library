@@ -1,0 +1,10 @@
+.error-modal {
+  align-items: center;
+}
+
+.error-modal__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--red);
+}

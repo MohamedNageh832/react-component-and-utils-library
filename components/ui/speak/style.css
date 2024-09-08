@@ -1,0 +1,57 @@
+.speak-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: var(--light-green);
+  color: #fff;
+}
+
+.speak-btn:hover {
+  background-color: var(--light-green-hover);
+}
+
+.speak-btn:disabled {
+  opacity: 0.5;
+}
+
+.speak-btn__icon {
+  font-size: 35px;
+  margin-left: 2px;
+}
+
+.speak-btn__tooltip {
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  transform: translate(-100%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: var(--s2) var(--s3);
+  border-radius: var(--br-rounded);
+  background-color: #fff;
+  color: #000;
+  font-size: var(--fs2);
+  white-space: nowrap;
+  animation: speakBtnPlayMeHorizontal 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes speakBtnPlayMeHorizontal {
+  from {
+    transform: translate(-110%, -50%);
+  }
+  to {
+    transform: translate(-100%, -50%);
+  }
+}
+@keyframes speakBtnPlayMeVertical {
+  from {
+    transform: translate(-50%, 4px);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}/*# sourceMappingURL=style.css.map */

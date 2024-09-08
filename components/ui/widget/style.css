@@ -1,0 +1,6 @@
+.widget {
+  padding: var(--s3);
+  border-radius: var(--br-1);
+  background-color: var(--main-bg-color);
+  box-shadow: var(--main-box-shadow);
+}/*# sourceMappingURL=style.css.map */

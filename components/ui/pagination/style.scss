@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--s1);
+}
+
+.pagination__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: var(--br-1);
+  flex-shrink: 0;
+  background-color: var(--muted-foreground);
+  color: var(--secondary-color);
+  font-size: var(--fs3);
+}
+
+.pagination__btn--arrow {
+  font-size: 24px;
+}
+
+.pagination__btn:disabled {
+  color: #ccc;
+}
+
+.pagination__btn.active {
+  background-color: var(--blue);
+  color: #fff;
+}

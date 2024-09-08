@@ -1,0 +1,19 @@
+.form__textarea {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: var(--s1);
+  resize: none;
+  line-height: 1.6;
+}
+
+.form__textarea:disabled {
+  border: none;
+  background-color: inherit;
+  color: #000;
+  padding: 0;
+}
+
+.form__textarea:focus-visible {
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

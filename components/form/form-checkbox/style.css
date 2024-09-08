@@ -1,0 +1,135 @@
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding-top: var(--s2);
+  padding-bottom: var(--s2);
+  font-size: var(--fs3);
+}
+
+.checkbox__ui {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.checkbox__input {
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  display: block;
+  width: 117%;
+  height: 117%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox__check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+}
+
+.checkbox__check::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  transform: rotate(45deg);
+  width: 25%;
+  height: 60%;
+  opacity: 0;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.checkbox__input:hover + .checkbox__check,
+.checkbox__input:checked + .checkbox__check {
+  border-color: #aaa;
+}
+
+.checkbox__input:checked + .checkbox__check {
+  background-color: var(--light-green);
+}
+
+.checkbox__input:checked + .checkbox__check::after {
+  opacity: 1;
+}
+
+.checkbox--semi-checked .checkbox__check {
+  border-color: #aaa;
+}
+
+.checkbox--semi-checked .checkbox__check::after {
+  position: static;
+  opacity: 1;
+  transform: none;
+  width: 80%;
+  height: 2px;
+  border: none;
+  background-color: #aaa;
+}
+
+.checkbox--outlined .checkbox__input:not(:checked) + .checkbox__check::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 100%;
+  transform: rotate(-45deg);
+  background-color: #aaa;
+}
+
+.checkbox--outlined .checkbox__input:not(:checked) + .checkbox__check::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 100%;
+  opacity: 1;
+  transform: rotate(45deg);
+  border: none;
+  background-color: #aaa;
+}
+
+.checkbox--outlined .checkbox__input:checked + .checkbox__check {
+  background-color: inherit;
+  border-color: var(--blue);
+}
+
+.checkbox--outlined .checkbox__input:checked + .checkbox__check::after {
+  border-color: var(--blue);
+}
+
+.checkbox {
+  font-size: var(--fs2);
+}
+
+.checkbox--sm .checkbox__ui {
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox--sm .checkbox__check {
+  border-width: 1px;
+}
+
+.checkbox--sm .checkbox__ {
+  width: 15px;
+  height: 15px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.separator {
+  width: 1px;
+  height: auto;
+  align-self: stretch;
+  justify-self: stretch;
+  background-color: var(--hairline);
+}
+
+.separator--horizontal {
+  width: 100%;
+  height: 1px;
+}

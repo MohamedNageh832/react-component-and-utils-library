@@ -1,0 +1,26 @@
+.content-holder {
+  overflow: auto;
+  width: 100%;
+  height: calc(100vh - 61px);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: all 0.5s ease;
+}
+
+.content-holder--sidebar-visible {
+  margin-right: 300px;
+}
+
+.content-holder__container {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  gap: 32px;
+}
+
+@media (max-width: 568px) {
+  .content-holder {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

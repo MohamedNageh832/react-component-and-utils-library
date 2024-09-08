@@ -1,0 +1,36 @@
+.multi-btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.multi-btn-group__radios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.multi-btn-group__btn {
+  padding: 4px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  font-size: var(--fs3);
+}
+
+.multi-btn-group__btn:hover,
+.multi-btn-group__btn--active {
+  outline: 2px solid var(--blue);
+}
+
+.multi-btn-group__btn:first-of-type .form__radio-btn {
+  border-top-right-radius: var(--bRadius1);
+  border-bottom-right-radius: var(--bRadius1);
+}
+
+.multi-btn-group__btn:last-of-type .form__radio-btn {
+  border-top-left-radius: var(--bRadius1);
+  border-bottom-left-radius: var(--bRadius1);
+}/*# sourceMappingURL=style.css.map */

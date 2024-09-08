@@ -1,0 +1,269 @@
+.table-widget__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--s3);
+}
+
+.table-holder {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.table-holder--fit {
+  max-height: 277px;
+}
+
+.table-holder::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-holder::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.table-holder::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.table-holder::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs2);
+  white-space: nowrap;
+}
+
+.table--no-min {
+  min-width: 0;
+}
+
+.table--layout-fixed {
+  table-layout: fixed;
+}
+
+col:not(.table__checkbox) {
+  min-width: 120px;
+}
+
+.table__row:last-child .dropdown {
+  top: -39px;
+  left: calc(100% + 12px);
+}
+
+.table__row:last-child .dropdown::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: -12px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent var(--light-blue) transparent transparent;
+}
+
+.table__head {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.table__heading {
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #bce0ff;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: inherit;
+  color: #000;
+}
+
+.table__checkbox {
+  width: 45px;
+}
+
+.table__btn {
+  background-color: var(--grey-100);
+}
+
+.table__btn--active {
+  background-color: var(--light-blue);
+}
+
+.table__select {
+  min-width: 100px;
+  max-height: 33px;
+  padding: var(--s1) var(--s2);
+}
+
+.table__input {
+  padding: var(--s2);
+}
+
+.table__select,
+.table__input {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.table__input:disabled {
+  border-radius: var(--mainBR);
+  border-bottom: none;
+  background-color: #eee;
+}
+
+.table__input:focus {
+  box-shadow: none;
+}
+
+.table__input:focus-visible {
+  outline: none;
+}
+
+.table__serial {
+  position: absolute;
+  top: -16px;
+  right: 100%;
+  z-index: 1;
+  padding: var(--s3);
+  border-radius: var(--mainBR);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  animation: scaleFade 0.5s forwards;
+}
+
+@keyframes scaleFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.table__serial::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+}
+
+.table__row:nth-child(n+18) .table__serial {
+  top: auto;
+  bottom: 8px;
+}
+
+.table__row:nth-child(n+18) .table__serial::after {
+  top: auto;
+  bottom: 10px;
+}
+
+.serial__close {
+  color: #999;
+  cursor: pointer;
+}
+
+.serial__close:hover {
+  color: #fff;
+}
+
+.serial__input {
+  border: none;
+  border-bottom: 1px solid #999;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.serial__btn {
+  color: #ddd;
+}
+
+.serial__input:focus {
+  box-shadow: none;
+  border-bottom: 1px solid #eee;
+}
+
+.nested-table-holder {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding-right: 48px;
+  background-color: #fff;
+}
+
+.nested-table-holder::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  right: 26px;
+  width: 1px;
+  height: calc(100% + 4px);
+  animation: animateHeight 0.9s forwards;
+  background-color: #ccc;
+}
+
+@keyframes animateHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: calc(100% + 4px);
+  }
+}
+.nested-table {
+  width: 100%;
+  font-size: var(--fs1);
+}
+
+.nested-table__row {
+  position: relative;
+  border: none;
+  animation: fadeIn 0.5s 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nested-table__row::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 0;
+  height: 1px;
+  border-radius: var(--mainBR);
+  background-color: #ccc;
+  animation: animateWidth 1s 0.3s forwards;
+}
+
+@keyframes animateWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18px;
+  }
+}
+.nested-table__heading,
+.nested-table__cell {
+  padding-left: var(--s3);
+  padding-right: var(--s3);
+}/*# sourceMappingURL=style.css.map */

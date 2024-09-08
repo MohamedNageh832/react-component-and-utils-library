@@ -1,0 +1,57 @@
+.text {
+  line-height: 1.6;
+}
+
+.text--xs {
+  font-size: 12px;
+}
+
+.text--sm {
+  font-size: 14px;
+}
+
+.text--md {
+  font-size: 16px;
+}
+
+.text--lg {
+  font-size: 20px;
+}
+
+.text--xl {
+  font-size: 28px;
+}
+
+.text--light {
+  font-weight: 300;
+}
+
+.text--regular {
+  font-weight: 400;
+}
+
+.text--medium {
+  font-weight: 500;
+}
+
+.text--semibold {
+  font-weight: 600;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--black {
+  font-weight: 800;
+}
+
+.text--inline {
+  display: inline-block;
+}
+
+.text--no-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=styles.css.map */

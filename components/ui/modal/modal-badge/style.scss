@@ -1,0 +1,27 @@
+.modal__badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.modal__badge--green {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.modal__badge--red {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.modal__badge--cyan {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}

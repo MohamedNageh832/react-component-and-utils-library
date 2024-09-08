@@ -1,0 +1,9 @@
+.form-select {
+  width: 100%;
+  padding: var(--s1);
+  border: 1px solid var(--hairline);
+  border-radius: var(--br-1);
+  background-color: transparent;
+  font-size: var(--form-element-font-size);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
